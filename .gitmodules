@@ -1,0 +1,3 @@
+[submodule "mlpractical"]
+	path = mlpractical
+	url = git@github.com:VICO-UoE/mlpractical.git
