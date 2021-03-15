@@ -103,7 +103,7 @@ save_yaml(outdir / "flags.yaml", flags_dict)
 
 # --- Read data ---
 inputdir = Path("/afs/inf.ed.ac.uk/user/s17/s1703944/xdetr/MLP_CW3/")
-datadir = inputdir / "data/vin_vig_256x256"
+datadir = inputdir / "data/meta_data/"
 imgdir = inputdir / "data/vin_vig_256x256"
 # flags.imgdir_name
 # /afs/inf.ed.ac.uk/user/s17/s1703944/xdetr/MLP_CW3/data/vin_vig_256x256/
@@ -119,7 +119,7 @@ imgdir = inputdir / "data/vin_vig_256x256"
 '''
 
 # Read in the data CSV files
-train_df = pd.read_csv(datadir / "train_meta.csv")
+train_df = pd.read_csv(datadir / "train_combined_meta.csv")
 train = train_df  # alias
 # sample_submission = pd.read_csv(datadir / 'sample_submission.csv')
 

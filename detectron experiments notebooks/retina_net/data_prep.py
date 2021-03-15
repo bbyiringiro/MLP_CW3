@@ -104,6 +104,7 @@ def get_vinbigdata_dicts(
                 # print(row)
                 # print(row["class_name"])
                 # class_name = row["class_name"]
+                print()
                 class_id = row["class_id"]
                 if class_id == 14:
                     # It is "No finding"
