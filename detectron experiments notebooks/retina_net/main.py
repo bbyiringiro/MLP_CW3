@@ -102,9 +102,21 @@ flags_dict = dataclasses.asdict(flags)
 save_yaml(outdir / "flags.yaml", flags_dict)
 
 # --- Read data ---
-inputdir = Path("/afs/inf.ed.ac.uk/user/s17/s1703944/xdetr/MLP_CW3/data")
-datadir = inputdir / "resized_train_meta"
-imgdir = inputdir / flags.imgdir_name
+inputdir = Path("/afs/inf.ed.ac.uk/user/s17/s1703944/xdetr/MLP_CW3/")
+datadir = inputdir / "data/vin_vig_256x256"
+imgdir = inputdir / "data/vin_vig_256x256"
+# flags.imgdir_name
+# /afs/inf.ed.ac.uk/user/s17/s1703944/xdetr/MLP_CW3/data/vin_vig_256x256/
+
+
+'''
+/data
+   /vin_vig_256x256
+      /train
+      /test
+      train_meta.csv
+
+'''
 
 # Read in the data CSV files
 train_df = pd.read_csv(datadir / "train.csv")

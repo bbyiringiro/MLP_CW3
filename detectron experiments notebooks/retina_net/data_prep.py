@@ -78,7 +78,7 @@ def get_vinbigdata_dicts(
     cache_path = Path(".") / f"dataset_dicts_cache{train_data_type_str}{class14_str}{debug_str}.pkl"
     if not use_cache or not cache_path.exists():
         print("Creating data...")
-        train_meta = pd.read_csv(imgdir / "resized_train_meta.csv")
+        train_meta = pd.read_csv(imgdir / "train_meta.csv")
         if debug:
             train_meta = train_meta.iloc[:500]  # For debug....
 
