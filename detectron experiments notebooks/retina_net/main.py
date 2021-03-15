@@ -45,7 +45,8 @@ class Flags:
     outdir: str = "results/det"
 
     # Data config
-    imgdir_name: str = "vinbigdata-chest-xray-resized-png-256x256"
+    # imgdir_name: str = "vinbigdata-chest-xray-resized-png-256x256"
+    imgdir_name: str = "vin_vig_256x256"
     split_mode: str = "all_train"  # all_train or valid20
     seed: int = 111
     train_data_type: str = "original"  # original or wbf
@@ -69,10 +70,11 @@ class Flags:
         return self
     
     
+    # "imgdir_name": "vinbigdata",
 flags_dict = {
     "debug": False,
     "outdir": "results/v9", 
-    "imgdir_name": "vinbigdata",
+    "imgdir_name": "train",
     "split_mode": "valid20",
     "iter": 15000,
     "roi_batch_size_per_image": 512,
@@ -100,8 +102,8 @@ flags_dict = dataclasses.asdict(flags)
 save_yaml(outdir / "flags.yaml", flags_dict)
 
 # --- Read data ---
-inputdir = Path("/kaggle/input")
-datadir = inputdir / "vinbigdata-chest-xray-abnormalities-detection"
+inputdir = Path("/afs/inf.ed.ac.uk/user/s17/s1703944/xdetr/MLP_CW3/data")
+datadir = inputdir / "resized_train_meta"
 imgdir = inputdir / flags.imgdir_name
 
 # Read in the data CSV files
