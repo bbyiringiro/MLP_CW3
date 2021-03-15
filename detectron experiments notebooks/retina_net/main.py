@@ -119,7 +119,7 @@ imgdir = inputdir / "data/vin_vig_256x256"
 '''
 
 # Read in the data CSV files
-train_df = pd.read_csv(datadir / "train.csv")
+train_df = pd.read_csv(datadir / "train_meta.csv")
 train = train_df  # alias
 # sample_submission = pd.read_csv(datadir / 'sample_submission.csv')
 
