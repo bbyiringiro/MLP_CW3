@@ -13,7 +13,7 @@ import scipy as sp
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from IPython.core.display import display, HTML
+# from IPython.core.display import display, HTML
 
 # --- plotly ---
 from plotly import tools, subplots
