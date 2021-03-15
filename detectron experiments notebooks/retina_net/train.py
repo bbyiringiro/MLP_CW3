@@ -5,6 +5,7 @@ import os
 from detectron2.data import build_detection_test_loader, build_detection_train_loader
 from detectron2.engine import DefaultPredictor, DefaultTrainer, launch
 
+from data_prep import *
 # from detectron2.evaluation import COCOEvaluator, PascalVOCDetectionEvaluator
 
 
