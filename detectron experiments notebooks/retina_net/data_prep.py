@@ -15,15 +15,15 @@ import seaborn as sns
 
 # from IPython.core.display import display, HTML
 
-# --- plotly ---
-from plotly import tools, subplots
-import plotly.offline as py
-py.init_notebook_mode(connected=True)
-import plotly.graph_objs as go
-import plotly.express as px
-import plotly.figure_factory as ff
-import plotly.io as pio
-pio.templates.default = "plotly_dark"
+# # --- plotly ---
+# from plotly import tools, subplots
+# import plotly.offline as py
+# py.init_notebook_mode(connected=True)
+# import plotly.graph_objs as go
+# import plotly.express as px
+# import plotly.figure_factory as ff
+# import plotly.io as pio
+# pio.templates.default = "plotly_dark"
 
 # --- models ---
 from sklearn import preprocessing
